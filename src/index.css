@@ -1,0 +1,348 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+body {
+  color: #094d89;
+  font-size: 1.2rem;
+  
+}
+header {
+  margin: auto;
+  margin-top: 0;
+  color: #094d89;
+  padding: 10px 20px;
+  display: flex;
+  background-color: #fbcc04;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px  10px 0 0;
+  /* max-width: 800px; */
+}
+nav > a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #094d89;
+  margin-right: 10px;
+}
+nav > a:hover {
+  color: #094d89c5;
+  text-decoration: underline; 
+}
+
+.active {
+  color: #094d89c5;
+  text-decoration: underline; 
+}
+
+.tenants-container {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+.tenant{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #fbcc04;
+  border-radius: 8px;
+}
+
+.tenant-reading {
+  text-align: left;
+  line-height: 2rem;
+}
+
+.tenant > button {
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #fbcc04;
+  background-color:#094d89;
+}
+.tenant > button:hover {
+  background-color:#094d89bb;
+}
+.data {
+  background-color: #fbcc04;
+  border-radius: 5px;
+  padding: 2px;
+}
+.read-form, .new-tenant{
+  padding: 15px;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 30%;
+  left: 45%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #023562aa;
+  gap: 5px;
+  align-items: center;
+
+}
+.read-form-container, .new-tenant-container {
+  position: absolute;
+  top:0;
+  left: 0;
+  background-color: #094d8938;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(5px);
+
+}
+.read-form > input, textarea, .new-tenant > input, select {
+  outline: none;
+  padding: 5px;
+  border: 1px solid #094d89;
+  border-radius: 5px;
+}
+.read-form > button,.new-tenant >button {
+  background-color: #fbcc04;
+  border: 1px solid #094d89;
+  font-size: 1.2rem;
+  width: 70px;
+  border-radius:5px;
+}
+.read-form > button:hover,.new-tenant >button:hover {
+  background-color: #fbce047f;
+}
+
+.user-form-container, .first-time-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #094d8990;
+  backdrop-filter: blur(5px);
+}
+.user-form{
+  border: 1px solid #fff;
+  color: #fbcc04;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 300px;
+  background-color: #094d89;
+}
+.user-form > input {
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #fbcc04;
+  width: 80%;
+}
+.user-form a {
+  color: #fbcc04;
+}
+.user-form > button {
+  background-color: #fbcc04;
+  font-size: 1.2rem;
+  border-radius:  5px;
+  border: 1px solid #fff;
+  padding: 5px 10px;
+}
+.user-form > button:hover {
+  background-color: #fbce04c0;
+}
+.owner-details {
+  margin: auto;
+  width: 300px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  gap: 10px;
+  
+}
+.owner-details > button {
+  font-size: 1.2rem;
+  width: 85px;
+  background-color: #fbcc04;
+  border: 1px solid #094d89;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.owner-details > button:hover {
+  background-color: #fbce04b4;
+}
+.owner-details > input {
+  padding: 5px;
+  font-size: 1.2rem;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #094d89;
+
+}
+.home-container {
+  /* font-size: 1.3rem; */
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app-intro{
+  color: #ffffff;
+  background-color: #094d89;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.app-intro > img {
+  width: 100%;
+  max-width: 400px;
+  flex: 1;
+}
+.app-intro > div{
+  flex: 1;
+  padding: 20px;
+}
+.tutorial {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tutorial > div {
+  flex: 1;
+  width: 100%;
+  padding: 20px;
+}
+.intro {
+  background-color:#094d89;
+  color: #fff;
+}
+ol {
+  padding: 10px;
+}
+.intro a {
+  color: #fff;
+}
+.recording > button {
+  background-color: #fbcc04;
+  font-size: 1.2rem;
+  border: 1px solid #094d89;
+  padding: 5px 10px;
+  border-radius: 8px;
+
+}
+.recording > button:hover {
+  background-color: #fbce04a1;
+}
+.deleteBtn {
+  background-color: rgb(255, 0, 0);
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.deleteBtn:hover {
+  background-color: rgba(255, 0, 0, 0.707);
+}
+.updateBtn {
+  background-color: rgb(4, 172, 46);
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.updateBtn:hover {
+  background-color: rgba(4, 172, 46, 0.668);
+}
+.edit {
+  margin: 10px auto;
+  background-color: rgb(2, 103, 211);
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.edit:hover {
+  background-color: rgba(2, 103, 211, 0.809);
+}
+
+.account-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.logoutBtn {
+  background-color: #094d89;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.logoutBtn:hover {
+  background-color: #094d89bb;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+  header {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  header > h1 {
+    font-size: 1.2rem;
+  }
+  .app-intro,.tutorial {
+    display: flex;;
+    flex-direction: column;
+    /* width: 100%; */
+  }
+  .intro {
+    background-color: #fff;
+    color: #094d89;
+  }
+  .intro  a {
+    color: #094d89;
+  }
+  .recording {
+    background-color: #094d89;
+    color: #fff;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* CSS rules */
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* CSS rules */
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* CSS rules */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* CSS rules */
+}
